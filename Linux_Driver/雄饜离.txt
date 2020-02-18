@@ -1,0 +1,10 @@
+
+驱动如附件，配置方式如下：
+                (1) .Connect the SIM7100 by physical USB interface and power on the modem.
+(2) .Open the terminal and type the shell command lsusb. 
+                 (3)  Our Modem is recognized by Ubuntu by USB interface(vid=1e0e,pid=9001) 
+ (4)  Compile the driver GobiSerial. Type the command “cd GobiSerial && make”,
+                   if no error occurs, a file named “GobiSerial.ko” will be generated.
+(5)   Type the command “sudo insmod GobiSerial.ko” to install the driver.
+  (6)   List the ttyUSBx devices by “ls -l /dev/ttyUSB*”
+      
